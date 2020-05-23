@@ -1,0 +1,91 @@
+body{
+    font-family: 'Lato', sans-serif;    
+}
+#bod{
+    background: rgba(245, 243, 243, 0.295);
+    font-family: 'Lato', sans-serif;
+}
+.site-main{
+    background-image: url(images/happiness.JPG);
+    /*background-size: center center;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 200vh;    
+    width: 100%;
+    -webkit-filter: saturate(1.5);
+    filter: saturate(1.5);
+}
+.site-name{
+    margin-bottom: 2px;  
+    margin-top: 7px;
+    text-align: center;
+    padding: 10px;
+    opacity: .5;
+    color: white;
+}
+.site-footer{
+    background: rgba(211, 211, 211, 0.253);
+    height: 5vh;
+    font-size: 0.8rem;
+    color: black;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;   
+    margin-top: 40vh;
+    text-align: center; 
+    padding-top: 0.8rem;
+    position: relative;
+    bottom: 0;
+}
+.contact-info{
+    background: rgba(211, 211, 211, 0.253);
+    border:1px solid rgba(165, 126, 133, 0.863);
+    box-shadow: -2px 3px 3px #aaa;
+    color: rgba(12, 12, 12, 0.952);
+    height:90vh;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+.shine{
+    font-size: 2rem;
+    font-style: inherit;    
+    text-align: center;
+    color: rgb(53, 49, 49);
+}
+.hidden{
+    display: none;
+}
+.row{
+    margin-bottom: 25px;
+}
+.btnSend{
+    background: rgba(143, 55, 128, 0.925) !important;
+    font-size: larger;
+    border-color: blueviolet;
+    text-align: center;
+    margin-left: auto;
+    
+    justify-content: center;  
+}
+.alignTxt{
+    margin-left: 10rem;
+    font-size: 1.2rem;
+    color: rgb(53, 49, 49);
+}
+.txtMargin{
+    margin-left: 2rem;
+}
+.alignMsg{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.deco{
+    border: 2px solid rgba(148, 136, 136, 0.253);
+    background-color: rgba(216, 202, 205, 0.644);
+    border-radius: 7px;     
+}

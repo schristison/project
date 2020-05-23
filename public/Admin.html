@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles/admin.css" rel="stylesheet">
+</head>
+
+<body id="bod">
+
+    <!-- header -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Catalog.html">Catalogue <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Admin.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.karenmillen.com/">Our Sister Company</a>
+                            <a class="dropdown-item" href="Admin.html">Register an item</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Catalog.html">View Our Catalogue</a>
+                        </div>
+                    </li>
+                </ul>
+
+        </nav>
+
+        <div>
+            <h2 class="site-name">Sandielocks Online Art Gallery</h2>
+        </div>
+    </header>
+    <!-- content -->
+    <main>
+        <div class="container">
+            <h1>Admin Board</h1>
+
+
+
+            <div class="row">
+
+
+                <div class="col-6">
+                    <div>
+                        <h4>Registering Items for Sale</h4>
+                    </div>
+
+                    <div class="form">
+
+                        <div class="row">
+
+                            <div class="col-4">
+                                <label>Code</label>
+                            </div>
+
+                            <div class="col-8">
+                                <input id="txtCode" type="text" class="form-control">
+
+                            </div>
+                        </div> <!-- end code -->
+
+                        <div class="row">
+
+                            <div class="col-4">
+                                <label>Description</label>
+                            </div>
+                            <div class="col-8">
+                                <input id="txtDescription" type="text" class="form-control">
+                            </div>
+                        </div> <!-- end Description -->
+
+                        <div class="row">
+
+                            <div class="col-4">
+                                <label>Price</label>
+                            </div>
+
+                            <div class="col-8">
+                                <input id="txtPrice" type="text" class="form-control">
+
+                            </div>
+                        </div> <!-- end Price -->
+
+                        <div class="row">
+
+                            <div class="col-4">
+                                <label>Image</label>
+                            </div>
+
+                            <div class="col-8">
+                                <input id="txtImage" type="text" class="form-control">
+
+                            </div>
+                        </div> <!-- end Image -->
+
+                        <div class="row">
+
+                            <div class="col-4">
+                                <label>Category</label>
+                            </div>
+
+                            <div class="col-8">
+                                <input id="txtCategory" type="text" class="form-control">
+
+                            </div>
+                        </div> <!-- end Category -->
+
+                        <div class="row">
+
+                            <div class="col-4">
+                                <label>Stock</label>
+                            </div>
+
+                            <div class="col-8">
+                                <input id="txtStock" type="text" class="form-control">
+
+                            </div>
+                        </div> <!-- end Stock -->
+
+                        <div class="row">
+
+                            <div class="col-4">
+                                <label>Delivery Day</label>
+                            </div>
+
+                            <div class="col-8">
+                                <input id="txtDeliveryDays" type="text" class="form-control">
+
+                            </div>
+                        </div> <!-- end Delivery Days -->
+
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-8">
+                                <button id="btnSave" class="btn btn-primary regBtn">Register Item</button>
+
+                                <br><br>
+                                <span id="alertSuccess" class="alert alert-success hidden"><strong>Item saved! </strong>
+
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6">
+                    <h4>Messages</h4>
+                    <div id="messages">
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </main>
+    <!-- The Footer -->
+    <footer class="site-footer">
+        &copy; 2020 | Sandie Christison | Trading as Sandielocks Inc | All rights reserved
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts/admin.js"></script>
+
+</body>
+
+</html>
+<!-- Code, Description, Price, Image, Category, Stock, Delivery Days -->
