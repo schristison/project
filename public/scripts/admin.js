@@ -65,12 +65,12 @@ function saveItem() {
             setTimeout(function () {
                 $("#alertSuccess").addClass("hidden");
             }, 3000);
-
-            error: function (errorDetails) {
-                console.log("Error:", errorDetails);
-            }
+        },
+        error: function (errorDetails) {
+            console.log("Error:", errorDetails);
         }
-    
+
+
 
     });
 
@@ -102,7 +102,7 @@ function testAjax() {
     //console.log("NOT FINISHED YET");
 }
 
-/* function testDelete(obj){
+function testDelete(obj){
     // Delete item from the server
     $.ajax({
         url: serverURL + "items",
@@ -127,7 +127,7 @@ function testAjax() {
             console.log("Error:", errorDetails);
         }
     });
-} */
+}
 
 function retrieveMessages() {
 
